@@ -1,6 +1,6 @@
 <?php
 header('Content-Type: application/json; charset=utf8');
-$link=mysqli_connect("localhost", "root", "root", "test");
+$link=mysqli_connect("localhost", "id", "pw", "db");
 if (!$link)
 {
     echo "MySQL 접속 에러 : ";

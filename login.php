@@ -1,5 +1,5 @@
 <?php
-$con=mysqli_connect("localhost", "root", "root", "test");
+$con=mysqli_connect("localhost", "id", "pw", "db");
 
 mysqli_set_charset($con,"utf8");
 

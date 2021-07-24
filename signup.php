@@ -1,5 +1,5 @@
 <?php
-$con=mysqli_connect("localhost", "root", "root", "test");
+$con=mysqli_connect("localhost", "id", "pw", "db");
 
 mysqli_set_charset($con,"utf8");
 
@@ -21,7 +21,7 @@ $pw =$_POST['pw'];
   if($num>0){
     echo '이미 가입한 이메일 입니다.';
   } else{
-    
+
     $sql = "insert into user (u_name, u_mail, u_passwd) values ('$name','$email', '$pw')";
     $re = mysqli_query($con, $sql);
 
